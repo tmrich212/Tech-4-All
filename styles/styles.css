@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&family=Raleway:wght@100;300;500&display=swap');
 
 * {
-    background-color: rgb(29, 29, 29);
+    /* background-color: rgb(29, 29, 29); */
+    background-color: rgb(15, 14, 14);
     color: whitesmoke;
     margin: 0;
     padding: 0;
@@ -44,6 +45,7 @@ body {
 .main {
     background: url('images/pexels-pavel-danilyuk-7658304.jpg');
     background: -webkit-linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.4)), url('images/pexels-andrew-neel-2312369.jpg');
+    background: -webkit-linear-gradient(rgba(29, 38, 113, 0.8), rgba(61, 48, 52, 0.4)), url('images/pexels-andrew-neel-2312369.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -51,7 +53,7 @@ body {
     align-items: center;
     text-align: center;
     min-height: 90%;
-    margin: 20px auto;
+    margin: 10px auto;
 }
 
 .intro {
@@ -63,8 +65,11 @@ body {
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     font-size: 3rem;
+    padding: 10px;
     background-color: transparent;
     text-transform: uppercase;
+    margin: 20px;
+    letter-spacing: .3rem;
 }
 
 .intro p {
@@ -72,4 +77,60 @@ body {
     font-size: 24px;
     background-color: transparent;
     text-transform: uppercase;
+    margin: 10px;
+    letter-spacing: .2rem;
+}
+
+/* Product Styles */
+.container-items {
+    margin-top: 80px;
+}
+
+.container-items h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+
+.products {
+    /* display: inline-grid; */
+    display: flex;
+    /* grid-template-columns: repeat(3, 1fr); */
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.grid {
+   padding: 15px;
+   position: relative;
+}
+
+.phones img {
+    max-width: 300px;
+}  
+
+.grid p, h3 {
+    background-color: rgb(145, 227, 255);
+    background-color: rgb(0, 148, 197);
+    /* height: 5rem; */
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+}
+
+.phones p {
+    padding-top: 20px;
+}
+
+.phones h3 {
+    color: whitesmoke;
+    padding-bottom: 20px;
 }
